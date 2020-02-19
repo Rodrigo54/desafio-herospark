@@ -1,0 +1,54 @@
+:host {
+  display: block;
+  height: 745px;
+
+  .box {
+    display: flex;
+    flex-flow: row wrap;
+    height: 680px;
+    background-image: url('../../assets/hero.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #252525;
+    color: #ffffff;
+
+    .left {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .content {
+        width: 545px;
+        font-family: 'Muli', sans-serif;
+        font-style: normal;
+
+        h1 {
+          font-weight: normal;
+          font-size: 40px;
+          line-height: 45px;
+          margin-top: 40px;
+
+          strong {
+            font-weight: 800;
+          }
+        }
+
+        p {
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+    }
+
+    .right {
+      flex: .8;
+
+      img {
+        position: absolute;
+        top: 205px;
+      }
+    }
+  }
+}

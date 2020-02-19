@@ -1,0 +1,16 @@
+<section class="container">
+  <h2>Nesse e-book você vai aprender sobre [assunto]</h2>
+  <p>Resumo em <strong>2 ou 3 parágrafos</strong> do que se trata o seu e-book</p>
+  <div class="cards">
+    <div class="card" *ngFor="let card of cards">
+      <svg class="icon" width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="4.66504" y="9.79645" width="15.8334" height="6.59726" transform="rotate(45 4.66504 9.79645)" fill="#C4C4C4"/>
+        <rect x="32.1885" y="4.66498" width="23.0904" height="6.59726" transform="rotate(135 32.1885 4.66498)" fill="#C4C4C4"/>
+      </svg>
+      <div>
+        <h3>Capítulo {{ card }}</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+      </div>
+    </div>
+  </div>
+</section>

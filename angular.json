@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "desafio-herospark": {
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "desafio-herospark"
+    }
+  },
+  "defaultProject": "desafio-herospark",
+  "cli": {
+    "analytics": "477a29e9-929d-481f-b2b2-cfc0620243a6"
+  }
 }

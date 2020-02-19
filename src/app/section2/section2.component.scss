@@ -1,0 +1,52 @@
+:host {
+  display: block;
+  background-color: #F3F3F3;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0px auto;
+  color: #262626;
+  padding: 40px 0px;
+  display: flex;
+  flex-flow: row wrap;
+
+  .left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      width: 380px;
+      margin: auto;
+
+      h2 {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 40px;
+        margin: 10px 0px;
+      }
+
+      h5 {
+        font-style: italic;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0px;
+        margin-bottom: 36px;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+    }
+  }
+}

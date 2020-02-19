@@ -1,0 +1,19 @@
+:host {
+  display: block;
+  background-color: #F3F3F3;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0px auto;
+  color: #262626;
+  padding: 30px 0px;
+  display: flex;
+  flex-flow: row wrap;
+  .social-links{
+    margin-left: auto;
+    a {
+      margin: 0px 5px;
+    }
+  }
+}
