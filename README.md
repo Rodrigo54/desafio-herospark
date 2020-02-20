@@ -1,27 +1,29 @@
-# DesafioHerospark
+# Desafio Herospark
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7f7de3d9-7386-420c-b39a-846e9945dde1/deploy-status)](https://app.netlify.com/sites/desafio-herospark/deploys)
 
-## Development server
+## [Live Demo](https://desafio-herospark.netlify.com/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+O teste consiste em implementar um layout conforme mock-up. Essa implementação deve ser responsiva, no link abaixo tem toda a especificação do projeto com os tipos de tela:
 
-## Code scaffolding
+https://www.figma.com/file/UJJJ4dUktjv25ZMob62PhS/Teste-Front?node-id=0%3A1
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Sobre o Sistema
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* Feito em Typescript
+* Angular 9
+* Hospedado no [netlify.com](https://www.netlify.com/)
+* SASS pré-processador CSS
 
-## Running unit tests
+## Requisitos
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Git
+* Node.js
+* npm
 
-## Running end-to-end tests
+## Guia de configuração
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1. `npm install`
+1. `ng serve` para um servidor de desenvolvimento
+1. `ng build --prod` para compilar os artefatos de produção
