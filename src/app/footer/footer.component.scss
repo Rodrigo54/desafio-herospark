@@ -10,8 +10,15 @@
   padding: 30px 0px;
   display: flex;
   flex-flow: row wrap;
+  @media screen and (max-width: 1110px) {
+    max-width: 80vw;
+    flex-flow: column nowrap;
+  }
   .social-links{
     margin-left: auto;
+    @media screen and (max-width: 1110px) {
+      margin: 30px auto 0px;
+    }
     a {
       margin: 0px 5px;
     }

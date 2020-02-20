@@ -1,27 +1,52 @@
 :host {
   display: block;
   height: 745px;
+  @media screen and (max-width: 1110px) {
+    height: auto;
+  }
+
+  header {
+    background-color: #252525;
+    color: #ffffff;
+    height: 90%;
+    @media screen and (max-width: 1110px) {
+      margin-bottom: 50px;
+    }
+  }
 
   .box {
+    margin: 0px auto;
+    max-width: 1110px;
+    @media screen and (max-width: 1110px) {
+      max-width: 80vw;
+    }
     display: flex;
     flex-flow: row wrap;
-    height: 680px;
     background-image: url('../../assets/hero.png');
     background-position: top center;
     background-repeat: no-repeat;
-    background-color: #252525;
-    color: #ffffff;
+    height: 100%;
+
+    @media screen and (max-width: 1110px) {
+      flex-flow: column nowrap;
+      background-color: #252525;
+      background-image: none;
+    }
 
     .left {
       flex: 1;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
+      margin-top: 40px;
 
       .content {
         width: 545px;
         font-family: 'Muli', sans-serif;
         font-style: normal;
+        @media screen and (max-width: 1110px) {
+          width: 100%;
+        }
 
         h1 {
           font-weight: normal;
@@ -44,10 +69,16 @@
 
     .right {
       flex: .8;
-
+      display: flex;
       img {
-        position: absolute;
-        top: 205px;
+        max-width: 100%;
+        position: relative;
+        top: 65px;
+        margin: 0px auto;
+        @media screen and (min-width: 1110px) {
+          position: absolute;
+          top: 205px;
+        }
       }
     }
   }

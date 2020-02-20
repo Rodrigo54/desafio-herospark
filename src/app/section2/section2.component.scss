@@ -10,12 +10,19 @@
   padding: 40px 0px;
   display: flex;
   flex-flow: row wrap;
+  @media screen and (max-width: 1110px) {
+    max-width: 80vw;
+    flex-flow: column nowrap;
+  }
 
   .left {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    img{
+      max-width: 100%;
+    }
   }
 
   .right {
@@ -27,6 +34,9 @@
     div {
       width: 380px;
       margin: auto;
+      @media screen and (max-width: 1110px) {
+        max-width: 80vw;
+      }
 
       h2 {
         font-weight: bold;
