@@ -8,7 +8,7 @@
     </ng-container>
   </div>
   <label for="email">E-mail *</label>
-  <input name="email" type="text" formControlName="email" placeholder="seuemail@gmail.com">
+  <input name="email" type="text" formControlName="email" placeholder="seuemail@gmail.com" inputmode="email">
   <div class="erros">
     <ng-container *ngIf="form.controls.email.invalid && form.controls.email.touched">
       <span *ngIf="form.controls.email.hasError('required')">digite seu e-mail</span>

@@ -9,6 +9,9 @@
     background-color: #252525;
     color: #ffffff;
     height: 90%;
+    background-image: url('../../../assets/hero.png');
+    background-position: top center;
+    background-repeat: no-repeat;
     @media screen and (max-width: 1110px) {
       margin-bottom: 50px;
     }
@@ -17,15 +20,12 @@
   .box {
     margin: 0px auto;
     max-width: 1110px;
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
     @media screen and (max-width: 1110px) {
       max-width: 80vw;
     }
-    display: flex;
-    flex-flow: row wrap;
-    background-image: url('../../../assets/hero.png');
-    background-position: top center;
-    background-repeat: no-repeat;
-    height: 100%;
 
     @media screen and (max-width: 1110px) {
       flex-flow: column nowrap;
