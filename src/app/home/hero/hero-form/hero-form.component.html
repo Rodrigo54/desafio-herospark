@@ -1,7 +1,19 @@
-<form>
+<form [formGroup]="form" (ngSubmit)="onSubmit()" >
   <label for="nome">Nome Completo *</label>
-  <input name="nome" type="text" placeholder="Digite seu nome completo">
+  <input name="nome" type="text" formControlName="nome" placeholder="Digite seu nome completo">
+  <div class="erros">
+    <ng-container *ngIf="form.controls.nome.invalid && form.controls.nome.touched">
+      <span *ngIf="form.controls.nome.hasError('required')">digite seu nome completo</span>
+      <span *ngIf="form.controls.nome.hasError('minlength')">digite seu nome completo</span>
+    </ng-container>
+  </div>
   <label for="email">E-mail *</label>
-  <input name="email" type="text" placeholder="seuemail@gmail.com">
+  <input name="email" type="text" formControlName="email" placeholder="seuemail@gmail.com">
+  <div class="erros">
+    <ng-container *ngIf="form.controls.email.invalid && form.controls.email.touched">
+      <span *ngIf="form.controls.email.hasError('required')">digite seu e-mail</span>
+      <span *ngIf="form.controls.email.hasError('email')">digite um e-mail válido</span>
+    </ng-container>
+  </div>
   <button type="submit">Receber conteúdo gratuito</button>
 </form>
