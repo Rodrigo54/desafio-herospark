@@ -2,25 +2,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { HeroComponent } from './hero/hero.component';
-import { HeroFormComponent } from './hero/hero-form/hero-form.component';
-import { Section1Component } from './section1/section1.component';
-import { Section2Component } from './section2/section2.component';
-import { Section3Component } from './section3/section3.component';
-import { FooterComponent } from './footer/footer.component';
+
+import { HomeModule } from './home/home.module';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  { path: '', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroComponent,
-    HeroFormComponent,
-    Section1Component,
-    Section2Component,
-    Section3Component,
-    FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HomeModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
